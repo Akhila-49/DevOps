@@ -2,7 +2,11 @@
  - hosts: 10.0.1.228
    become: yes
    tasks:
-    - name: install docker
+    - name: install docker.io
       command: 
-        cmd: apt install docker.io -y
+        cmd: apt install docker.io -y 
+    
+    - name: install docker-compose
+      command:
+        cmd: apt install docker-compose -y
       
