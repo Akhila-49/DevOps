@@ -3,7 +3,27 @@ Running as SYSTEM
 Building in workspace /var/lib/jenkins/workspace/Docker-installation
 SSH: Connecting from host [ip-10-0-1-228]
 SSH: Connecting with configuration [Ansible] ...
-SSH: EXEC: completed after 18,436 ms
+SSH: Creating session: username [ansible], hostname [10.0.1.34], port [22]
+SSH: Connecting session ...
+SSH: Connected
+SSH: Opening exec channel ...
+SSH: EXEC: channel open
+SSH: EXEC: STDOUT/STDERR from command [ansible-playbook docker-playbook.yml
+] ...
+SSH: EXEC: connected
+
+PLAY [10.0.1.228] **************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.0.1.228]
+
+TASK [install Docker] **********************************************************
+changed: [10.0.1.228]
+
+PLAY RECAP *********************************************************************
+10.0.1.228                 : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+SSH: EXEC: completed after 15,221 ms
 SSH: Disconnecting configuration [Ansible] ...
 SSH: Transferred 0 file(s)
 Build step 'Send files or execute commands over SSH' changed build result to SUCCESS
