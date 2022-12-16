@@ -6,7 +6,7 @@ pipeline{
             steps{
                 script{
                     image = input(
-                        messgae: 'enter the image name',
+                        message: 'enter the image name',
                         ok: 'Submit',
                         parameters: [string(defaultValue: 'nginx', name: 'image name')]
                     )
