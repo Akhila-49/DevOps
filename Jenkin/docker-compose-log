@@ -1,0 +1,43 @@
+Started by user Akhila Vutukuri
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in /var/lib/jenkins/workspace/input
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (user input)
+[Pipeline] script
+[Pipeline] {
+[Pipeline] input
+WARNING: Unknown parameter(s) found for class type 'org.jenkinsci.plugins.workflow.support.steps.input.InputStep': messgae
+Input requested
+Approved by Akhila Vutukuri
+[Pipeline] }
+[Pipeline] // script
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (launch container)
+[Pipeline] sh
++ cd
++ whoami
+jenkins
++ pwd
+/var/lib/jenkins
++ IMAGE=nginx docker-compose up -d
+Creating network "jenkins_default" with the default driver
+Creating jenkins_web_1 ... 
+Creating jenkins_web_1 ... done
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (list all containers)
+[Pipeline] sh
++ docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS                  PORTS                               NAMES
+39f5197e4a47   nginx     "/docker-entrypoint.…"   2 seconds ago   Up Less than a second   0.0.0.0:80->80/tcp, :::80->80/tcp   jenkins_web_1
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
