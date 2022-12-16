@@ -1,0 +1,10 @@
+Started by user Akhila Vutukuri
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Docker-installation
+SSH: Connecting from host [ip-10-0-1-228]
+SSH: Connecting with configuration [Ansible] ...
+SSH: EXEC: completed after 18,436 ms
+SSH: Disconnecting configuration [Ansible] ...
+SSH: Transferred 0 file(s)
+Build step 'Send files or execute commands over SSH' changed build result to SUCCESS
+Finished: SUCCESS
