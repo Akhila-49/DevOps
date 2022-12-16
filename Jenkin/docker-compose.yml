@@ -1,0 +1,7 @@
+version: "3"
+services:
+    web:
+      name: ${name}
+      image: nginx
+      ports:
+        - "80:80"
