@@ -1,0 +1,10 @@
+---
+ - hosts: 10.0.1.228
+   become: yes
+   tasks:
+    - name: install docker
+      command: 
+        cmd: apt install docker.io -y
+      
+
+
